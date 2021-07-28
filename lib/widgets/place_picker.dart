@@ -236,6 +236,8 @@ class PlacePickerState extends State<PlacePicker> {
             "${this.locationResult.latLng.longitude}";
       }
 
+      endpoint += "&radius=500";
+
       final response = await http.get(Uri.parse(endpoint));
 
       if (response.statusCode != 200) {
