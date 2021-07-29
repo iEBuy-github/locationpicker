@@ -327,7 +327,13 @@ class PlacePickerState extends State<PlacePicker> {
       builder: (context) => Positioned(
         width: size.width,
         top: appBarBox.size.height,
-        child: Material(elevation: 1, child: Column(children: suggestions)),
+        child: Material(
+          elevation: 1,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: suggestions,
+          ),
+        ),
       ),
     );
 
