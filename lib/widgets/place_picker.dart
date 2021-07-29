@@ -330,7 +330,7 @@ class PlacePickerState extends State<PlacePicker> {
         child: Material(
           elevation: 1,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: suggestions,
           ),
         ),
